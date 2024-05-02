@@ -86,7 +86,7 @@ async function createPostOnWordPress(title, categoryId, content, tags) {
     url: 'https://inzeedo.com/wp-json/wp/v2/posts',
     headers: {
       'Content-Type': 'application/json',
-      'User-Agent': 'vercel-favicon/1.0',
+      
       Authorization: 'Basic YWRtaW5AaW56ZWVkby5jb206SFUxdyBqeFd0IEtIT2wgajgwWiBLN1daIEdQOEs='
     },
     data: {title: title, content: content, 'status': 'publish',categories: [categoryId]}
