@@ -1,4 +1,5 @@
 {
+  "type":"module",
   "name": "inzeedo-news-post-publish",
   "version": "1.0.0",
   "description": "Ineedo News Post Publish Telegram Bot",

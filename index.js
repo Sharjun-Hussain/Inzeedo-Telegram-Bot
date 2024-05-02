@@ -1,8 +1,5 @@
-const TelegramBot = require("node-telegram-bot-api");
-const axios = require("axios");
-const wordpressEndpoint = "https://inzeedo.com/wp-json/wp/v2/posts";
-const wordpressUsername = "admin@inzeedo.com";
-const wordpressPassword = "HU1w jxWt KHOl j80Z K7WZ GP8K";
+import axios from "axios";
+import TelegramBot from "node-telegram-bot-api";
 const token = "6305948282:AAFJgAfof6cnNHKrXpFrB2T-Jbvx3HkSH9A";
 const bot = new TelegramBot(token, { polling: true });
 
