@@ -3,11 +3,13 @@ const axios = require("axios");
  const express = require('express');
 const token = "6305948282:AAFJgAfof6cnNHKrXpFrB2T-Jbvx3HkSH9A";
 const bot = new TelegramBot(token, { polling: true });
+const cors = require("cors")
 
 const app = express();
 
 app.use(express.json);
-
+app.use(cors())
+;
 bot.onText(/\/create/, async (msg) => {
   try {
     // Start the conversation with the user
