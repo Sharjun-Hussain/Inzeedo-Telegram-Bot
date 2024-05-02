@@ -1,7 +1,12 @@
 const TelegramBot = require("node-telegram-bot-api");
 const axios = require("axios");
+ const express = require('express');
 const token = "6305948282:AAFJgAfof6cnNHKrXpFrB2T-Jbvx3HkSH9A";
 const bot = new TelegramBot(token, { polling: true });
+
+const app = express();
+
+app.use(express.json);
 
 bot.onText(/\/create/, async (msg) => {
   try {
@@ -99,3 +104,6 @@ async function createPostOnWordPress(title, categoryId, content, tags) {
   });
 }
 
+app.listen(3000, () => {
+    console.log(`Server started on port`);
+});
