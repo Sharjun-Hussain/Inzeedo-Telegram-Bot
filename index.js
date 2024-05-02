@@ -102,3 +102,4 @@ async function createPostOnWordPress(title, categoryId, content, tags) {
   });
 }
 
+module.exports = createPostOnWordPress
